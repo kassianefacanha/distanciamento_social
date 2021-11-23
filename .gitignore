@@ -3,3 +3,4 @@
 *.cfg
 *.names
 *.data
+*.pyc
