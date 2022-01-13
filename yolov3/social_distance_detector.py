@@ -90,11 +90,6 @@ while True:
 		cv2.rectangle(frame, (startX, startY), (endX, endY), color, 2)
 		cv2.circle(frame, (cX, cY), 5, color, 1)
 
-	# # _____________________________________________________________________#
-
-    #         (mask, without_mask) = maskNet.predict(face)[0]
-    #         label = "Mask" if mask > without_mask else "No Mask"
-    #         color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
 
 	text = "Social Distancing Violations: {}".format(len(violate))
 	cv2.putText(frame, text, (10, frame.shape[0] - 55),
